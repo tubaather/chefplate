@@ -1,0 +1,112 @@
+.logo{
+  text-shadow: 2px 2px black;
+  font-size: 40px;
+  color: #fff4d6;
+  text-align: center;
+}
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+   font-family: myFirstFont;
+   src: url(sansation_light.woff);
+}
+
+* {
+   font-family: myFirstFont;
+}
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+
+}
+.column2 {
+  float: left;
+  width: 22.33%;
+  padding: 10px;
+  margin: 10px;
+
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.prof {
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+@keyframes example {
+  0%   {left:0px; top:0px;}
+  25%  { left:200px; top:0px;}
+    50%   {left:0px; top:0px;}
+  75%  { left:200px; top:0px;}
+    100%   {left:0px; top:0px;}
+ 
+}
+* {
+  box-sizing: border-box;
+}
+
+.pic {
+
+  
+  transition: transform .2s;
+  
+ 
+}
+
+.pic:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+}
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #fff4d6;
+  margin-top: 20px;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 60px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+body{
+	margin: 2px;
+	padding: 20px;
+	width: 100%;
+	background-color: #fefefd;
+  background-image: url("background.jpg");
+
+}
